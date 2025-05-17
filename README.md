@@ -2,6 +2,8 @@
 
 A small color-guessing game I created to teach friends how to code their first project.
 
+![Image](image.png)
+
 ---
 
 ## How to Play
