@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorGuesser</title>
+    <link rel="stylesheet" href="/static/fonts.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <img id="logo" src="/static/logo.svg" alt="Logo">
+
+    <main class="column">
+        <div class="row">
+            <div id="match-group" class="column">
+                <span class="label">Color to match</span>
+                <div id="color-to-match" class="color-square"></div>
+            </div>
+            <div id="controls-group" class="column">
+                <span class="label">Controls</span>
+                <div class="control">
+                    <span id="red-label">R</span>
+                    <div class="range">
+                        <input type="range" name="red" id="red">
+                    </div>
+                    <span id="red-value">50%</span>
+                </div>
+                <div class="control">
+                    <span id="green-label">G</span>
+                    <div class="range">
+                        <input type="range" name="green" id="green">
+                    </div>
+                    <span id="green-value">50%</span>
+                </div>
+                <div class="control">
+                    <span id="blue-label">B</span>
+                    <div class="range">
+                        <input type="range" name="blue" id="blue">
+                    </div>
+                    <span id="blue-value">50%</span>
+                </div>
+            </div>
+        </div>
+        <button id="guess">Guess!</button>
+    </main>
+
+    <dialog class="centered" id="game-dialog">
+        <h1 id="game-result">Game Result</h1>
+        <span id="game-subtitle">Game Subtitle</span>
+        <div class="row">
+            <div id="color-match" class="color-square"></div>
+            <div id="color-guessed" class="color-square"></div>
+        </div>
+        <span id="accuracy">% similarity</span>
+        <form method="dialog">
+            <button autofocus id="play-again">Play Again</button>
+        </form>
+    </dialog>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
