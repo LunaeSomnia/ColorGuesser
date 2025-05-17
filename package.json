@@ -5,11 +5,5 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "start": "live-server"
-  },
-  "devDependencies": {
-    "live-server": "^1.2.2"
-  }
+  "main": "index.js"
 }
