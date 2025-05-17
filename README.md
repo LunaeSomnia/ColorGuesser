@@ -26,6 +26,6 @@ npx serve .
 
 ### Step 2: Navigate to the hosted URL `http://localhost:3000/`
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
